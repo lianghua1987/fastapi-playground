@@ -41,7 +41,7 @@ async def add_book(updated_book=Body()):
     return BOOKS
 
 
-@app.put("/books/delete/{title}")
+@app.delete("/books/delete/{title}")
 async def add_book(title: str):
     for i in range(len(BOOKS)):
         if BOOKS[i].get("title").casefold() == title.casefold():
