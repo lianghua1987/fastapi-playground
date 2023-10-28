@@ -2,6 +2,7 @@
 python -m vene fastapienv
 .\fastapienv\Scripts\activate
 pip install "unicorn[standard]"
+pip install sqlalchemy
 ```
 Change python local interpreter from .\fastapienv\Scripts\python.exe
 
